@@ -24,3 +24,11 @@ EOF
 cd /app/myproject
 
 python setup.py nosetests
+
+
+cat<<EOF
+==============================================================================
+The installation failed since nosetests calls easy_install, which is unable to
+install wheel packages.
+==============================================================================
+EOF
