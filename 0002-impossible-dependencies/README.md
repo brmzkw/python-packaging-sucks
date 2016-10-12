@@ -1,5 +1,4 @@
-Demonstrate why Python dependencies management is a failure
-===========================================================
+## Python dependencies management is a failure
 
 Run `make` to:
 
@@ -8,7 +7,7 @@ Run `make` to:
 3. Install `a-proj`, which depends on `requests` (any version) and `b-proj`.
 
 
-#### Expected behaviour
+#### Expected result
 
 Install `requests <=2.5.0`, `a-proj` and `b-proj`.
 
@@ -19,7 +18,7 @@ If for any reason it is impossible, the installation should fail and the Python
 modules `aproj` and `bproj` should not be importable.
 
 
-#### Actual behaviour
+#### Actual result
 
 During step 3., an error is displayed but the Python modules `aproj` and
 `bproj` are still installed and importable.
