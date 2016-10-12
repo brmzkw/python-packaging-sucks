@@ -65,3 +65,10 @@ EOF
 
 aproj
 bproj
+
+cat<<EOF
+=============================================================================
+It would be better to succeed the installation, or at least refuse to install
+the packages.
+=============================================================================
+EOF
